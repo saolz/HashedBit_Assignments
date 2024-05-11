@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Problems</title>
+
+</head>
+<body>
+  <h1>Number Problems</h1>
+  <div class="problem">
+    <h2>1. Even Numbers from 1 to 100</h2>
+    <div id="evenNumbers"></div>
+  </div>
+
+  <div class="problem">
+    <h2>2. Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter a number">
+    <input type="number" id="num2" placeholder="Enter another number">
+    <select id="operation">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <button onclick="performCalculation()">Calculate</button>
+    <div id="calculatorResult"></div>
+  </div>
+
+  <div class="problem">
+    <h2>3. Tax Calculator</h2>
+    <input type="number" id="salary" placeholder="Enter your salary">
+    <button onclick="calculateTax()">Calculate Tax</button>
+    <div id="taxResult"></div>
+  </div>
+
+  <div class="problem">
+    <h2>4. Sum of Product of Digits</h2>
+    <input type="number" id="n1" placeholder="Enter a number">
+    <input type="number" id="n2" placeholder="Enter another number">
+    <button onclick="calculateSumOfProducts()">Calculate</button>
+    <div id="productResult"></div>
+  </div>
+
+  <script src="k.js"></script>
+</body>
+</html>
