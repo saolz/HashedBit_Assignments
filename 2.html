@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+</div>
+
+<script>
+//Write your code here
+
+function createDiv(width, height, text) {
+    const element = document.getElementById("container");
+
+    const newDiv = document.createElement("div");
+
+    newDiv.style.width = width + 'px';
+    newDiv.style.height = height + 'px';
+    newDiv.style.border = "1px solid black"
+
+    newDiv.textContent = text;
+
+    element.appendChild(newDiv);
+    
+}
+createDiv(200, 200, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque blanditiis dolorum ipsa repellendus ducimus quidem eos commodi consectetur nobis sunt!');
+
+Window.createDiv = createDiv;  
+</script>
+</body>
+</html>
